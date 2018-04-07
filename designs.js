@@ -3,7 +3,7 @@
 // Make variables for height(row) & width(column). - X
 // Use for loop and inner for loop to make grid. - X
 
-const table = $('#pixelCanvas');//Variable for table
+const table = $('#pixelCanvas');
 $(document).ready(function(){
     $("#sizePicker").submit(function (e){
         e.preventDefault(); //prevents default setting where the page shows no grid at all.
@@ -28,6 +28,6 @@ function makeGrid(h, w) {
 
 //Function to add color into a cell
 table.on('click', 'td', function(){
-    let penColor = $('#colorPicker').val(); //Color variable that has the color picker's values
-    $(this).css('background-color', penColor); //sets background color property to penColor's value.
+    let penColor = $('#colorPicker').val();
+    $(this).css('background-color', penColor);
 });
