@@ -11,6 +11,7 @@ $(document).ready(function(){
         const width = $('#inputWidth').val(); //gridWith
         makeGrid(height, width);
     });
+    $("#fading").fadeIn("slow");
 });
 //Function will make grid using height and width as arguments
 function makeGrid(h, w) {
@@ -30,5 +31,3 @@ table.on('click', 'td', function(){
     let penColor = $('#colorPicker').val(); //Color variable that has the color picker's values
     $(this).css('background-color', penColor); //sets background color property to penColor's value.
 });
-
-//function to make table fade in and out

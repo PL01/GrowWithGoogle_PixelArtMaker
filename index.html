@@ -2,33 +2,28 @@
 <html>
 <head>
     <title>Pixel Art Maker!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-
-        <h1>Lab: Pixel Art Maker</h1>
+    <div id="pixelArt">
+        <h1>Pixel Art Maker</h1>
         <fieldset>
             <legend><h2>Make Your Grid</h2></legend>
             <form id="sizePicker">
-                Grid Height:
-                <input type="number" id="inputHeight" name="height" min="1" value="1">
-                Grid Width:
-                <input type="number" id="inputWidth" name="width" min="1" value="1">
+                <text>Grid Height:</text>
+                    <input type="number" id="inputHeight" name="height" min="1" value="1">
+                <text>Grid Width:</text>
+                    <input type="number" id="inputWidth" name="width" min="1" value="1">
                 <input type="submit">
             </form>
+            <h2>Pick A Color</h2>
+                <input type="color" id="colorPicker">
+            <h2>Design Canvas</h2>
+                <table id="pixelCanvas"></table>
         </fieldset>
-
-        <h2>Pick A Color</h2>
-        <input type="color" id="colorPicker">
-
-        <h2>Design Canvas</h2>
-        <div class="fadeIn">
-            <table id="pixelCanvas"></table>
-        </div>
+    </div>
     <script src="designs.js"></script>
 </body>
 </html>

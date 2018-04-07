@@ -1,21 +1,25 @@
 body {
     text-align: center;
+    background-image: url("https://www.wykop.pl/cdn/c3201142/comment_Dh3x8v6uKIDttqkOi5LUYgR4DTvweTTZ.gif");
+    font-family: 'VT323', monospace;
 }
-
+#pixelArt{
+    margin: 100px 50px auto 50px;
+}
 h1 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 40px;
-    margin: 1em 1em 0.5em 1em;
+    font-size: 70px;
+    font-weight: lighter;
+    margin: 20px 0px;
 }
 
 h2 {
-    margin: 1em 0 0.5em;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
+    margin: 20px 0px;
+    font-size: 40px;
+    font-weight: lighter;
 }
 
-h2:first-of-type {
-    margin-top: 0.5em;
+text{
+    font-size: 20px;
 }
 
 table,
@@ -28,6 +32,7 @@ td {
 table {
     border-collapse: collapse;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 tr {
@@ -40,4 +45,14 @@ td {
 
 input[type=number] {
     width: 6em;
+}
+
+fieldset{
+    border-radius: 5px;
+    border-width: 4px;
+    border-style: dotted;
+    border-color: aliceblue;
+}
+legend{
+    padding: 0px 10px;
 }
